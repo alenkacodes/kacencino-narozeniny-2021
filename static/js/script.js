@@ -33,7 +33,7 @@ span.onclick = function () {
 var pusaButton = document.getElementById("pusa");
 
 pusaButton.onclick = function () {
-  openModal("../img/pusa.jpg");
+  openModal("./static/img/pusa.jpg");
 };
 
 var giftImg = document.getElementById("gift");
@@ -61,7 +61,7 @@ function check_q1(input) {
     hidden_block.hidden = false;
   } else {
     hidden_block.hidden = true;
-    openModal("../img/evil.jpg");
+    openModal("./static/img/evil.jpg");
   }
 }
 
@@ -84,7 +84,7 @@ document.getElementById("button-4").onclick = function () {
     hidden_block.hidden = false;
   } else {
     hidden_block.hidden = true;
-    openModal("../img/evil.jpg");
+    openModal("./static/img/evil.jpg");
   }
 };
 
