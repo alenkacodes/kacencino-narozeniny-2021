@@ -10,8 +10,8 @@ var stage8Div = document.getElementById("stage-8");
 
 // // remove afterwards  = FOR DEVELOPMENT ONLY =
 // stage1Div.hidden = true;
-// stage4Div.hidden = false;
-// contentDiv.className = "background-stage4";
+// stage5Div.hidden = false;
+// contentDiv.className = "background-stage5";
 
 //  ========= modal =========
 var modal = document.getElementById("myModal");
@@ -61,7 +61,7 @@ function check_q1(input) {
     hidden_block.hidden = false;
   } else {
     hidden_block.hidden = true;
-    openModal("./static/img/evil.jpg");
+    openModal("./static/img/batman-no.jpg");
   }
 }
 
@@ -84,7 +84,7 @@ document.getElementById("button-4").onclick = function () {
     hidden_block.hidden = false;
   } else {
     hidden_block.hidden = true;
-    openModal("./static/img/evil.jpg");
+    openModal("./static/img/groot.jpg");
   }
 };
 
@@ -98,3 +98,79 @@ document.getElementById("button-pauza").onclick = function () {
   contentDiv.className = "background-stage5";
 };
 // ========== End of STAGE 4 =================
+
+//  ========= STAGE 5 =========
+document.getElementById("button-answerDeadpool").onclick = function () {
+  var answer = document.getElementById("wade");
+  var hidden_block = document.getElementById("instruction5");
+  if (answer.value.toLowerCase() == "wade") {
+    hidden_block.hidden = false;
+  } else {
+    hidden_block.hidden = true;
+    openModal("./static/img/deadpool-wrong1.jpg");
+  }
+};
+
+document.getElementById("button-hallway").onclick = function () {
+  stage5Div.hidden = true;
+  stage6Div.hidden = false;
+  contentDiv.className = "background-stage6";
+};
+// ========== End of STAGE 5 =================
+
+//  ========= STAGE 6 =========
+document.getElementById("button-answerLoki").onclick = function () {
+  var answer = document.getElementById("tom");
+  var hidden_block = document.getElementById("instruction6");
+  if (answer.value.toLowerCase() == "tom hiddleston") {
+    hidden_block.hidden = false;
+  } else {
+    hidden_block.hidden = true;
+    openModal("./static/img/loki-no.gif");
+  }
+};
+
+document.getElementById("button-livingroom").onclick = function () {
+  stage6Div.hidden = true;
+  stage7Div.hidden = false;
+  contentDiv.className = "background-stage7";
+};
+// ========== End of STAGE 6 =================
+
+//  ========= STAGE 7 =========
+function check_q2(input) {
+  var hidden_block = document.getElementById("instruction7");
+  if (input.id == "correct2") {
+    hidden_block.hidden = false;
+  } else if (input.id == "wrong2.1") {
+    hidden_block.hidden = true;
+    openModal("./static/img/huvudroll.jpg");
+  } else if (input.id == "wrong2.2") {
+    hidden_block.hidden = true;
+    openModal("./static/img/kafferep.jpg");
+  } else {
+    hidden_block.hidden = true;
+    openModal("./static/img/grönlid.jpg");
+  }
+}
+
+document.getElementById("button-myroom").onclick = function () {
+  stage7Div.hidden = true;
+  stage8Div.hidden = false;
+  contentDiv.className = "background-stage8";
+};
+// ========== End of STAGE 7 =================
+
+//  ========= STAGE 8 =========
+document.getElementById("button-answerMystique").onclick = function () {
+  var answer = document.getElementById("blue");
+  var hidden_block = document.getElementById("instruction8");
+  if (answer.value.toLowerCase() == "modrá") {
+    hidden_block.hidden = false;
+  } else {
+    hidden_block.hidden = true;
+    openModal("./static/img/mystique.jpg");
+  }
+};
+
+// ========== End of STAGE86 =================

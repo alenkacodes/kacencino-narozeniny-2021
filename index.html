@@ -24,12 +24,14 @@
           <p>Milá Kačenko,</p>
           <p>narozeninovy text blah blah blah</p>
 
-          <button id="pusa" class="button-template">
-            Nejdřív mi dej pusu,
-          </button>
+          <button id="pusa" class="pusa">Nejdřív mi dej pusu,</button>
           <div>
-            <h3>a pak si rozklikni si dáreček.</h3>
-            <img src="./static/img/gift.jpg" id="gift" />
+            <p>a pak si rozklikni si dáreček.</p>
+            <img
+              src="./static/img/gift.jpg"
+              id="gift"
+              style="cursor: pointer"
+            />
           </div>
         </div>
 
@@ -46,12 +48,11 @@
           </p>
           <p>
             Postav se na tradiční oslaveneckou pozici - uprostřed okna, čelem do
-            místnosti a odpovídej na vše v prvním pádě.
+            místnosti, odpovídej na vše v prvním pádě a pužívej interpunkci.
           </p>
+          <p>Jsi připavená?</p>
           <br />
-          <button id="startButton" class="button-template">
-            Jestli jsi připavená, tak začneme!
-          </button>
+          <button id="startButton" class="button-template">JDEM NA TO!</button>
         </div>
 
         <!-- STAGE 2 END -->
@@ -59,30 +60,52 @@
         <!-- STAGE 3 -->
         <div id="stage-3" hidden="true">
           <h3>Kolik komixů Marvel vydal od roku 2009?</h3>
-          <p>
-            Na začátek tě budu šetřit a dám ti možnosti, takže by to mohlo být
-          </p>
+
           <div>
-            <input type="radio" name="q1" id="wrong1.1" value="wrong1.1" onchange="check_q1(this)"/>
+            <input
+              type="radio"
+              name="q1"
+              id="wrong1.1"
+              value="wrong1.1"
+              onchange="check_q1(this)"
+            />
             <label for="wrong1.1">&nbsp 7 000</label>
           </div>
           <div>
-            <input type="radio" name="q1" id="wrong1.2" value="wrong1.2" onchange="check_q1(this)"/>
+            <input
+              type="radio"
+              name="q1"
+              id="wrong1.2"
+              value="wrong1.2"
+              onchange="check_q1(this)"
+            />
             <label for="wrong1.2">21 000</label>
           </div>
           <div>
-            <input type="radio" name="q1" id="correct1" value="correct1" onchange="check_q1(this)"/>
+            <input
+              type="radio"
+              name="q1"
+              id="correct1"
+              value="correct1"
+              onchange="check_q1(this)"
+            />
             <label for="correct1">32 000</label>
           </div>
           <div>
-            <input type="radio" name="q1" id="wrong1.3" value="wrong1.3" onchange="check_q1(this)"/>
+            <input
+              type="radio"
+              name="q1"
+              id="wrong1.3"
+              value="wrong1.3"
+              onchange="check_q1(this)"
+            />
             <label for="wrong1.3">45 000</label>
           </div>
           <div id="instruction1" hidden="true">
             <h3>Správně!</h3>
             <p>Udělej 2 kroky vpřed, 5 vlevo, 4 vpravo a 3 vlevo.</p>
             <button id="button-kitchen" class="button-template">
-              Klikni sem, až dojdeš.
+              JSEM TADY
             </button>
           </div>
           <div id="instruction2" hidden="true">
@@ -92,7 +115,7 @@
               vpravo, 5 vlevo a 2 kroky vpravo.
             </p>
             <button id="button-drink" class="button-template">
-              Pokračujem.
+              POKRAČUJEME
             </button>
           </div>
         </div>
@@ -105,21 +128,19 @@
             Bezpečnostní pásku, baterii a ?
           </h3>
           <input type="text" id="proteza" name="name" />
-          <button id="button-4" class="button-template">Odeslat odpověď.</button>
+          <button id="button-4" class="button-template">ODESLAT</button>
 
           <div id="instruction3" hidden="true">
             <h3>Super!</h3>
             <p>Teď jdi 9 kroků rovně a 5 vlevo</p>
             <button id="button-bathroom" class="button-template">
-              Klikni sem, až dojdeš.
+              JSEM TADY
             </button>
           </div>
           <div id="instruction4" hidden="true">
-            <p>
-              Poslední možnost čurapauzy, než budeme pokračovat
-            </p>
+            <p>Poslední možnost čurapauzy, než budeme pokračovat</p>
             <button id="button-pauza" class="button-template">
-              Pokračujem.
+              POKRAČUJEME
             </button>
           </div>
         </div>
@@ -127,80 +148,130 @@
 
         <!-- STAGE 5 -->
         <div id="stage-5" hidden="true">
-          <h3>
-            Jaké je Deadpoolovo pravé křestní jméno?
-          </h3>
-          <input type="text" id="wade" name="name" />
-          <button class="button=template">Odeslat odpověď.</button>
-
+          <div>
+            <h3>Jaké je Deadpoolovo pravé křestní jméno?</h3>
+            <input type="text" id="wade" name="name" />
+            <button id="button-answerDeadpool" class="button-template">
+              ODESLAT
+            </button>
+          </div>
           <div id="instruction5" hidden="true">
             <h3>Paráda!</h3>
-            <p>Zády k koupelnovým dveřím udělej 9 kroků vpřed, 15 kroků vpravo, 5 rovně a 2 vpravo.</p>
+            <p>
+              Zády k koupelnovým dveřím udělej 9 kroků vpřed, 15 kroků vpravo, 5
+              rovně a 2 vpravo.
+            </p>
             <button id="button-hallway" class="button-template">
-              Klikni sem, až dojdeš.
+              JSEM TADY
             </button>
+          </div>
+        </div>
         <!-- STAGE 5 END -->
 
         <!-- STAGE 6 -->
         <div id="stage-6" hidden="true">
-          <h3>
-            Jak se jmenuje herec, který hraje Lokiho?
-          </h3>
-          <input type="text" id="tom" name="name" />
-          <button class="button=template">Odeslat odpověď.</button>
+          <div>
+            <h3>Jak se jmenuje celým jménem herec, který hraje Lokiho?</h3>
+            <input type="text" id="tom" name="name" />
+            <button id="button-answerLoki" class="button-template">
+              ODESLAT
+            </button>
+          </div>
 
           <div id="instruction6" hidden="true">
             <h3>To je on!</h3>
-            <p>Jdi 2 kroky rovně, 5 vlevo, otoč se doleva a udělej dalších 5 kroků.</p>
-            <p>Možná, že už tušíš, kam tě zavedu, ale jistá si být nemůžeš. Takže, nejdřív mi odpověz na otázku a já ti řeknu, jak dál.
+            <p>
+              Jdi 2 kroky rovně, 5 vlevo, otoč se doleva a udělej dalších 5
+              kroků.
             </p>
+            <p>
+              Možná, že už tušíš, kam tě zavedu, ale jistá si být nemůžeš.
+              Takže, nejdřív mi odpověz na otázku a já ti řeknu, jak dál.
+            </p>
+
             <button id="button-livingroom" class="button-template">
-              Klikni sem, až dojdeš.
+              JSEM TADY
             </button>
+          </div>
         </div>
         <!-- STAGE 6 END -->
 
         <!-- STAGE 7 -->
         <div id="stage-7" hidden="true">
-          <h3>Jak se jmenuje Thorovo kladivo? Otáyka to není jednoduchá, tak dej pozor, ať nevybereš kuličky z IKEA!
-          </h3>
           <div>
-            <input type="radio" id="correct2" value="correct2" />
-            <label for="correct2">Mjolnir</label>
-          </div>
-          <div>
-            <input type="radio" id="wrong2.1" value="wrong2.1" />
-            <label for="wrong2.1">Huvudroli</label>
-          </div>
-          <div>
-            <input type="radio" id="wrong2.2" value="wrong2.2" />
-            <label for="wrong2.2">Kafferep</label>
-          </div>
-          <div>
-            <input type="radio" id="2.3" value="2.3" />
-            <label for="2.3">Grönlid</label>
+            <h3>
+              Jak se jmenuje Thorovo kladivo? Otázka to není jednoduchá, tak dej
+              pozor, ať nevybereš kuličky z IKEA!
+            </h3>
+            <div>
+              <input
+                type="radio"
+                name="q2"
+                id="correct2"
+                value="correct2"
+                onchange="check_q2(this)"
+              />
+              <label for="correct2">Mjolnir</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="q2"
+                id="wrong2.1"
+                value="wrong2.1"
+                onchange="check_q2(this)"
+              />
+              <label for="wrong2.1">Huvudroli</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="q2"
+                id="wrong2.2"
+                value="wrong2.2"
+                onchange="check_q2(this)"
+              />
+              <label for="wrong2.2">Kafferep</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="q2"
+                id="wrong2.3"
+                value="wrong2.3"
+                onchange="check_q2(this)"
+              />
+              <label for="2.3">Grönlid</label>
+            </div>
           </div>
 
           <div id="instruction7" hidden="true">
             <h3>Ano!</h3>
-            <p>Jdeme do finále, udělej 3 kroky vpravo, 7 vlevo, 3 vlevo. Teď se otoč a posaď se u mě.</p>
+            <p>
+              Jdeme do finále, udělej 3 kroky vpravo, 7 vlevo, 3 vlevo. Teď se
+              otoč a posaď se u mě.
+            </p>
             <button id="button-myroom" class="button-template">
-              Klikni sem, až dojdeš.
+              JSEM TADY
             </button>
+          </div>
         </div>
         <!-- STAGE 7 END -->
 
         <!-- STAGE 8 -->
         <div id="stage-8" hidden="true">
-          <h3>
-            Jakou barvu kůže má Mystique?
-          </h3>
-          <input type="text" id="blue" name="name" />
-          <button class="button=template">Odeslat odpověď.</button>
-
+          <div>
+            <h3>Jakou barvu kůže má Mystique?</h3>
+            <br />
+            <input type="text" id="blue" name="name" />
+            <button id="button-answerMystique" class="button-template">
+              ODESLAT
+            </button>
+          </div>
           <div id="instruction8" hidden="true">
             <h3>Hurá!</h3>
             <p>Teď už bys měla vědět, kde se porozhlédnout po dárečku ;)</p>
+          </div>
         </div>
         <!-- STAGE 8 END -->
 

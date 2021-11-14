@@ -19,57 +19,88 @@
 .button-template {
   margin: auto;
   display: inline-block;
-  padding: 15px;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 4em;
+  padding: 5px 5px 0px 5px;
+  margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: 300;
   color: #ffffff;
   background-color: #ed1d24;
   text-align: center;
-  font-size: large;
+  font-size: 25px;
   font-family: "Marvel", Verdana, Tahoma;
   transition: all 0.2s;
+}
+
+.button-template:hover {
+  background-color: #ce0000;
+  cursor: pointer;
+}
+
+.pusa {
+  margin: auto;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  border-radius: 4em;
+  background-color: #1398db;
+  text-align: center;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.pusa:hover {
+  background-color: #1b7fb1;
+  cursor: pointer;
 }
 
 .background-stage1 {
   background-image: url("../img/baloons.jpg");
   background-size: cover;
+  background-position: center;
 }
 .background-stage2 {
-  background-color: blue;
+  background-color: #f7a2a5;
   background-size: contain;
 }
 
 .background-stage3 {
   background-image: url("../img/marvel-comics.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 .background-stage4 {
   background-image: url("../img/guardians.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .background-stage5 {
   background-image: url("../img/deadpool.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: left;
 }
 .background-stage6 {
   background-image: url("../img/loki.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .background-stage7 {
   background-image: url("../img/thor1.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: left;
 }
 .background-stage8 {
   background-image: url("../img/x-men.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .white-box {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 40px;
+  padding: 20px 40px;
   margin: 5% 5%;
   border-radius: 2em;
 }
@@ -132,9 +163,6 @@
   }
 }
 
-#pusa:hover {
-  background-color: #4095c6;
-}
 /* ------------------PUSA IMAGE END --------------------------------*/
 
 #gift {
