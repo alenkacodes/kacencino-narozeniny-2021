@@ -43,27 +43,27 @@
 }
 
 .background-stage3 {
-  background-color: url("/static/img/marvel-comics.jpg");
+  background-image: url("/static/img/marvel-comics.jpg");
   background-size: contain;
 }
 .background-stage4 {
-  background-color: url("/static/img/guardians.jpg");
+  background-image: url("/static/img/guardians.jpg");
   background-size: contain;
 }
 .background-stage5 {
-  background-color: url("/static/img/deadpool.png");
+  background-image: url("/static/img/deadpool.png");
   background-size: contain;
 }
 .background-stage6 {
-  background-color: url("/static/img/loki.jpg");
+  background-image: url("/static/img/loki.jpg");
   background-size: contain;
 }
 .background-stage7 {
-  background-color: url("/static/img/thor1.jpg");
+  background-image: url("/static/img/thor1.jpg");
   background-size: contain;
 }
 .background-stage8 {
-  background-color: url("/static/img/x-men.jpg");
+  background-image: url("/static/img/x-men.jpg");
   background-size: contain;
 }
 

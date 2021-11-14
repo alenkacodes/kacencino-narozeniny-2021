@@ -8,10 +8,10 @@ var stage6Div = document.getElementById("stage-6");
 var stage7Div = document.getElementById("stage-7");
 var stage8Div = document.getElementById("stage-8");
 
-// remove afterwards  = FOR DEVELOPMENT ONLY =
-stage1Div.hidden = true;
-stage4Div.hidden = false;
-contentDiv.className = "background-stage4";
+// // remove afterwards  = FOR DEVELOPMENT ONLY =
+// stage1Div.hidden = true;
+// stage4Div.hidden = false;
+// contentDiv.className = "background-stage4";
 
 //  ========= modal =========
 var modal = document.getElementById("myModal");
