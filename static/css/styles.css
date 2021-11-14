@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "Marvel";
-  src: url("/static/Marvel.ttf") format("truetype");
+  src: url("../Marvel.ttf") format("truetype");
 }
 
 .button-template {
@@ -34,7 +34,7 @@
 }
 
 .background-stage1 {
-  background-image: url("/static/img/baloons.jpg");
+  background-image: url("../img/baloons.jpg");
   background-size: cover;
 }
 .background-stage2 {
@@ -43,27 +43,27 @@
 }
 
 .background-stage3 {
-  background-image: url("/static/img/marvel-comics.jpg");
+  background-image: url("../img/marvel-comics.jpg");
   background-size: contain;
 }
 .background-stage4 {
-  background-image: url("/static/img/guardians.jpg");
+  background-image: url("../img/guardians.jpg");
   background-size: contain;
 }
 .background-stage5 {
-  background-image: url("/static/img/deadpool.png");
+  background-image: url("../img/deadpool.png");
   background-size: contain;
 }
 .background-stage6 {
-  background-image: url("/static/img/loki.jpg");
+  background-image: url("../img/loki.jpg");
   background-size: contain;
 }
 .background-stage7 {
-  background-image: url("/static/img/thor1.jpg");
+  background-image: url("../img/thor1.jpg");
   background-size: contain;
 }
 .background-stage8 {
-  background-image: url("/static/img/x-men.jpg");
+  background-image: url("../img/x-men.jpg");
   background-size: contain;
 }
 
