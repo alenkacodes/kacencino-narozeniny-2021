@@ -10,8 +10,8 @@ var stage8Div = document.getElementById("stage-8");
 
 // // remove afterwards  = FOR DEVELOPMENT ONLY =
 // stage1Div.hidden = true;
-// stage5Div.hidden = false;
-// contentDiv.className = "background-stage5";
+// stage8Div.hidden = false;
+// contentDiv.className = "background-stage8";
 
 //  ========= modal =========
 var modal = document.getElementById("myModal");
@@ -162,11 +162,13 @@ document.getElementById("button-myroom").onclick = function () {
 // ========== End of STAGE 7 =================
 
 //  ========= STAGE 8 =========
+
 document.getElementById("button-answerMystique").onclick = function () {
   var answer = document.getElementById("blue");
   var hidden_block = document.getElementById("instruction8");
   if (answer.value.toLowerCase() == "modrá") {
     hidden_block.hidden = false;
+    document.getElementById("marveltheme").play();
   } else {
     hidden_block.hidden = true;
     openModal("./static/img/mystique.jpg");
