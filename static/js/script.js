@@ -25,6 +25,7 @@ function openModal(imgPath) {
 
 span.onclick = function () {
   modal.style.display = "none";
+  modalImg.src = "";
 };
 // ========== End of modal =================
 
